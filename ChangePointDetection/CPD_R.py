@@ -13,5 +13,5 @@ class CPD_R:
     def detectChanges(self, data, cpmType='GLR',  ARL0=2000, startup=20):
         data = FloatVector(data)
         result = self.cpm.processStream(data, cpmType='GLR',  ARL0=2000, startup=20)
-        result = CpdR.robj_to_dict(result)
+        result = CPD_R.robj_to_dict(result)
         return result 
